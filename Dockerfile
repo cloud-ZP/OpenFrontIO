@@ -11,4 +11,5 @@ RUN npm run build-prod
 
 EXPOSE 3000
 
-CMD ["npx", "tsx", "src/server/Master.ts"]
+CMD ["npx", "tsx", "src/server/Server.ts"]
+
