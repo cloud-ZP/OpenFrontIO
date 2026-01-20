@@ -7,10 +7,9 @@ RUN npm ci
 
 COPY . .
 
-# フロントエンド + サーバー両方ビルド
+# フロントエンドだけビルド（サーバーはTSXで動く）
 RUN npm run build-prod
-RUN npx tsc
 
 EXPOSE 3001
 
-CMD ["node", "dist/server/Server.js"]
+CMD ["npx", "tsx", "src/server/Server.ts"]
