@@ -8,6 +8,7 @@ RUN npm ci
 COPY . .
 
 RUN npm run build-prod
+RUN mkdir -p static && cp index.html static/index.html
 
 EXPOSE 3000
 
