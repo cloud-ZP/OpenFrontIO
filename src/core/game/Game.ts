@@ -117,6 +117,7 @@ export enum GameMapType {
   Didier = "Didier",
   DidierFrance = "Didier France",
   AmazonRiver = "Amazon River",
+  Aichi ="Aichi",
 }
 
 export type GameMapName = keyof typeof GameMapType;
@@ -180,6 +181,7 @@ export const mapCategories: Record<string, GameMapType[]> = {
     GameMapType.Didier,
     GameMapType.DidierFrance,
     GameMapType.Sierpinski,
+    GameMapType.Aichi,
   ],
 };
 
