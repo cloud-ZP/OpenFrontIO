@@ -2345,5 +2345,10 @@
     "code": "zw",
     "continent": "Africa",
     "name": "Zimbabwe"
+  },
+  {
+    "code": "Toyota",
+    "continent": "Asia",
+    "name": "Toyota"
   }
 ]
