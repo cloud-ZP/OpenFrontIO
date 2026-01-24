@@ -1,68 +1,50 @@
 {
   "map": {
+    "width": 2120,
     "height": 1500,
-    "num_land_tiles": 1212701,
-    "width": 2120
-  },
-  "map16x": {
-    "height": 375,
-    "num_land_tiles": 74094,
-    "width": 530
+    "num_land_tiles": 1212701
   },
   "map4x": {
+    "width": 1060,
     "height": 750,
-    "num_land_tiles": 300625,
-    "width": 1060
+    "num_land_tiles": 300625
+  },
+  "map16x": {
+    "width": 530,
+    "height": 375,
+    "num_land_tiles": 74094
   },
   "name": "Aichi",
   "nations": [
     {
-      "coordinates": [
-        719,
-        493
-      ],
+      "name": "Nagoya",
       "flag": "ja",
-      "name": "Nagoya"
+      "coordinates": [719, 493]
     },
     {
-      "coordinates": [
-        1111,
-        681
-      ],
+      "name": "Toyota",
       "flag": "jp",
-      "name": "Toyota"
+      "coordinates": [1111, 681]
     },
     {
-      "coordinates": [
-        733,
-        868
-      ],
+      "name": "Handa",
       "flag": "jp",
-      "name": "Handa"
+      "coordinates": [733, 868]
     },
     {
-      "coordinates": [
-        979,
-        853
-      ],
+      "name": "Okazaki",
       "flag": "jp",
-      "name": "Okazaki"
+      "coordinates": [979, 853]
     },
     {
-      "coordinates": [
-        1092,
-        979
-      ],
+      "name": "Gamagori",
       "flag": "jp",
-      "name": "Gamagori"
+      "coordinates": [1092, 979]
     },
     {
-      "coordinates": [
-        1279,
-        1068
-      ],
+      "name": "Toyohashi",
       "flag": "jp",
-      "name": "Toyohashi"
+      "coordinates": [1279, 1068]
     }
   ]
 }
