@@ -1,140 +1,151 @@
-- This is a sample changelog based off of v0.24.0.
-- This file will be replaced with real release notes during the release build process.
-  - Indented bullets look like this
+# 📦 **OpenFront v24 チェンジログ（日本語版）**
 
-📦 **OpenFront v24 Changelog**
+## ⚖️ **バランス調整**
 
-⚖️ **Balance Changes**
+- 貿易船の上限を 150 に変更（Evan）  
+  → 所有している港の数に応じて貿易金額が増加し、上限の影響を相殺します。
+- MIRV（多弾頭核ミサイル）を弱体化  
+  → 破壊力が抑えられ、放射能の隙間をより早く占領しやすくなります。
+- 軍艦は敵の輸送船を軍艦より優先して攻撃し、輸送船撃破後は即リロード（Evan）
+- 建築割引は一度しか使用できなくなりました
+- AI の核ミサイルは SAM ランチャーを避けるように
 
-- Trade ships are now capped at 150 (Evan)
-  → Each port you own now increases the gold per trade, counterbalancing the cap.
-- MIRVs have been nerfed
-  → Expect less devastating multi-warhead nukes. Land in-between the fallout can be more quickly conquered.
-- Warships prioritize enemy transport ships over warships. Reload instantly after shooting a transport ship. (Evan)
-- Building discounts can only be used one time.
-- AI nukes now avoid SAM launchers
+---
 
-🚅 **Major Features**
+## 🚅 **主要アップデート**
 
-- Trains added for new movement mechanics (experimental for private lobbies and single player) (DevelopingTom)
-- Factories spawn trains and railroads (choose Factory as unit in private lobby or for single player, to use trains)
-- Railroads can form loops
-- Added Trios and Quads. Add them to public lobby rotation together with Duos. (FakeNeo)
-- Upgradable structures: Cities, Ports, SAMs, and Silos can now be improved
-- Multi-level radial menu with dynamic build options
-- Creative Commons License added to non-commercial resources
-- Factories added for private lobbies and single player games
-- Hash-based routing implemented
-- Flares system implemented
-- GitHub Releases with release notes are now supported (click the What's New button/megaphone icon)
+- 列車を追加（プライベートロビー・シングルプレイで実験的に使用可能）（DevelopingTom）
+- 工場が列車と鉄道を生成（プライベートロビーまたはシングルプレイで工場ユニットを選択）
+- 鉄道はループ構造を形成可能
+- Trios と Quads を追加。Duos と合わせて公開ロビーのローテーションに追加（FakeNeo）
+- 都市・港・SAM・サイロのアップグレード機能を追加
+- 多層式のラジアルメニュー（動的ビルドオプション）
+- 非商用リソースに Creative Commons ライセンスを追加
+- 工場をプライベートロビーとシングルプレイに追加
+- ハッシュベースのルーティングを実装
+- フレアシステムを実装
+- GitHub Releases によるリリースノート表示をサポート（「新着情報」ボタンから確認可能）
 
-🔧 **Game Improvements**
+---
 
-- Improved territory drawing performance
-- SAMs now only target nukes threatening nearby areas
-- Nukes are now faster (speed increased from 4 → 6)
-- Better color mixing for small player counts (Ble4Ch)
-- Unique player colors to avoid confusion (Ble4Ch)
-- Better and optimized bot behaviour and spawn logic (tryout33 & FakeNeo)
-- Boat build discounts now scale with unit ownership
-- Improved username censoring and management
-- Updated East Asia map (formerly "Japan and Neighbors")
-- Reworked and optimized leaderboard UI
-- Improved visual clarity for alliances and stacked buildings
+## 🔧 **ゲーム改善**
 
-🔧 **Game Improvements (continued)**
+- 領土描画パフォーマンスを改善
+- SAM は近隣を脅かす核のみを迎撃
+- 核ミサイルの速度を 4 → 6 に上昇
+- 少人数プレイ時の色混合を改善（Ble4Ch）
+- プレイヤーごとにユニークな色を割り当て（Ble4Ch）
+- ボットの行動とスポーンロジックを最適化（tryout33 & FakeNeo）
+- 船の建築割引がユニット所有数に応じて変動
+- ユーザー名の検閲と管理を改善
+- 「日本と近隣」マップを「東アジア」に更新
+- リーダーボード UI を再設計・最適化
+- 同盟や建物重ね表示の視認性を改善
 
-- Better handling for betrayal alerts and radial menu behavior
-- Red alert frame when betrayed (devalnor)
-- Attack hotkeys added (Engla)
-- Boat hotkey added
-- Nations can spawn cities without a port
-- Team sizes now equalized
-- MIRV warhead intercepted stats are now recorded
-- Text FX added
-- Terrain manipulation for attack advantage
-- New logo added
-- Fix Duo partner (Nation) always same in Single player (tryout33)
-- Rename Replay Speed to Game Speed for Single player (tryout33)
-- Fix Nations building more than allowed (tryout33)
+---
 
-🧪 **UI & Quality of Life**
+## 🔧 **ゲーム改善（続き）**
 
-- Fixed text overflow in UI (Diessel)
-- Fixed websocket and join bugs
-- Fixed boat-on-land issues
-- Fixed modal errors and null pointer warnings
-- Fixed input handler edge cases on Mac (proper modifier and emoji key detection) (Ble4Ch)
-- Fixed scrollbar appearing unnecessarily in small boxes on Chromium browsers
-- Fixed giant world map key
-- Leaderboards, alerts, and modals now support translation & dark mode
-- New custom flag support and pattern icons
-- Various patterns available (Sword, Shells, White Rabbit, Goat, Cats, Hand, Radiation, Cursor, QR)
-- Patterned territory support
-- More responsive scrollbar and player info panels
-- Top bar redesign (Diessel)
-- More responsive design for in-game elements
-- New icon layer/sprites for structures
-- Building/loading/HP bars improved
-- Proper alliance timer naming
-- Logout button added
-- Handle not spawned player fixes
-- Multiple patterns support
-- Fix: anonymized name isn't displayed in chat message (tryout33)
-- Fix Leaderboard: show 0% instead of NaN when all terrain is nuked (tryout33)
-- Some fixes to the new Radial menu (tryout33)
-- Fix bug/performance improvements for trade ships (tryout33)
-- News Notification Badge for new release notes (floriankilian)
-- Translation improvements
+- 裏切りアラートやラジアルメニューの挙動を改善
+- 裏切られた際に赤いフレームを表示（devalnor）
+- 攻撃ホットキーを追加（Engla）
+- 船のホットキーを追加
+- 国家は港がなくても都市を生成可能に
+- チームサイズを均等化
+- MIRV の迎撃数を記録
+- テキストエフェクトを追加
+- 地形操作による攻撃有利システム
+- 新ロゴを追加
+- シングルプレイで Duo パートナーが固定される問題を修正（tryout33）
+- リプレイ速度を「ゲーム速度」に名称変更（tryout33）
+- 国家が許容量以上に建築する問題を修正（tryout33）
 
-🛠️ **Backend & Technical**
+---
 
-- Stats endpoints are now available
-- Added CORS origin headers
-- Added support for mobile apps native login
-- Discord user and guild member caching
-- Improved session error handling
-- Changed server logging
-- Improved data loading and fixed various bugs
+## 🧪 **UI & QoL（品質改善）**
 
-🔒 **Security & Bug Fixes**
+- UI のテキスト溢れを修正（Diessel）
+- WebSocket・参加バグを修正
+- 陸上に船が出現する問題を修正
+- モーダルエラーや null ポインタ警告を修正
+- Mac の入力ハンドラの特殊キー検出を修正（Ble4Ch）
+- Chromium で不要なスクロールバーが出る問題を修正
+- 巨大マップの凡例を修正
+- リーダーボード・アラート・モーダルが翻訳とダークモードに対応
+- カスタム旗とパターンアイコンを追加
+- 新パターン（剣・貝殻・白ウサギ・ヤギ・猫・手・放射能・カーソル・QR）
+- 領土パターン対応
+- スクロールバーとプレイヤー情報パネルの応答性を改善
+- 上部バーを再設計（Diessel）
+- ゲーム内 UI のレスポンシブ性を改善
+- 建築/ロード/HP バーを改善
+- 同盟タイマーの名称を適正化
+- ログアウトボタンを追加
+- 未スポーンプレイヤー処理を修正
+- 複数パターン対応
+- 匿名名がチャットに表示されない問題を修正（tryout33）
+- リーダーボードで全地形が核で消滅した際に NaN → 0% に修正（tryout33）
+- 新ラジアルメニューの修正（tryout33）
+- 貿易船のバグとパフォーマンス改善（tryout33）
+- 新着通知バッジを追加（floriankilian）
+- 翻訳改善
 
-- Fixed naval attack spam exploit
-- Fixed gold donation validation exploit
-- Fixed pot issue
-- Various stability improvements and bug fixes
+---
 
-🌐 **Translations**
+## 🛠️ **バックエンド & 技術**
 
-- Bulgarian🇧🇬: Nikola123 & NewHappyRabbit
-- Japanese🇯🇵: Aotumuri, daimyo_panda2 & gafunuko
-- French🇫🇷: cldprv, gx21 & r3ms
-- Dutch🇳🇱: cldprv & tryout33
-- German🇩🇪: Pilkey, jacks0n, floriankilian, Fibig & Texxter
-- Spanish🇪🇸: 6uzm4n
-- Russian🇷🇺: Rulfam
-- Ukrainian🇺🇦: Rulfam
-- Polish🇵🇱: zibi, RinkyDinky & Rulfam
-- Serbo-Croatian🇷🇸🇭🇷🇧🇦🇲🇪: Vekser
-- Italian🇮🇹: frappa10 & Lollosean
-- Brazilian Portuguese🇧🇷: theskeleton4393 & juliosilvaqwerty5
-- Turkish🇹🇷: Toyatak
-- Arabic🇸🇦: N0ur, Moha & SyntaxPM
-- Swedish🇸🇪: Moha, theangel2 & Keevee
-- Hindi🇮🇳: sheikh
-- Bengali🇧🇩: sheikh
-- Esperanto: r3ms
-- Toki Pona: Makonede
-- Slovak🇸🇰: extraextra
-- Czech🇨🇿: Xaelor & erinthegirl
-- Hebrew🇮🇱: Goblinon
-- Finnish🇫🇮: Tanepro193
-- Korean🇰🇷: Jinyoon
-- Danish🇩🇰: NiclasWK
-- Chinese Simplified🇨🇳: Moki
-- Galician: toldinsound
+- 統計 API を追加
+- CORS ヘッダーを追加
+- モバイルアプリのネイティブログインをサポート
+- Discord ユーザーとギルドメンバーのキャッシュ
+- セッションエラー処理を改善
+- サーバーログを変更
+- データ読み込みを改善し、各種バグを修正
 
-## What's Changed
+---
+
+## 🔒 **セキュリティ & バグ修正**
+
+- 海戦スパム攻撃の悪用を修正
+- ゴールド寄付の検証バグを修正
+- ポット問題を修正
+- 安定性向上と各種バグ修正
+
+---
+
+## 🌐 **翻訳**
+
+- ブルガリア語🇧🇬: Nikola123 & NewHappyRabbit
+- 日本語🇯🇵: Aotumuri, daimyo_panda2 & gafunuko
+- フランス語🇫🇷: cldprv, gx21 & r3ms
+- オランダ語🇳🇱: cldprv & tryout33
+- ドイツ語🇩🇪: Pilkey, jacks0n, floriankilian, Fibig & Texxter
+- スペイン語🇪🇸: 6uzm4n
+- ロシア語🇷🇺: Rulfam
+- ウクライナ語🇺🇦: Rulfam
+- ポーランド語🇵🇱: zibi, RinkyDinky & Rulfam
+- セルビア・クロアチア語🇷🇸🇭🇷🇧🇦🇲🇪: Vekser
+- イタリア語🇮🇹: frappa10 & Lollosean
+- ブラジル語🇧🇷: theskeleton4393 & juliosilvaqwerty5
+- トルコ語🇹🇷: Toyatak
+- アラビア語🇸🇦: N0ur, Moha & SyntaxPM
+- スウェーデン語🇸🇪: Moha, theangel2 & Keevee
+- ヒンディー語🇮🇳: sheikh
+- バングラデシュ語🇧🇩: sheikh
+- エスペラント: r3ms
+- トキポナ: Makonede
+- スロバキア語🇸🇰: extraextra
+- チェコ語🇨🇿: Xaelor & erinthegirl
+- ヘブライ語🇮🇱: Goblinon
+- フィンランド語🇫🇮: Tanepro193
+- 韓国語🇰🇷: Jinyoon
+- デンマーク語🇩🇰: NiclasWK
+- 中国語簡体🇨🇳: Moki
+- ガリシア語: toldinsound
+
+# 📘 **What's Changed（GitHub Pull Requests 一覧）**
+
+以下は OpenFront v24 に含まれるすべての PR の一覧です。
 
 - Bugfix: don't allow other players to move warships by @evanpelle in https://github.com/openfrontio/OpenFrontIO/pull/879
 - Proper alliance timer naming by @tnhnblgl in https://github.com/openfrontio/OpenFrontIO/pull/886
