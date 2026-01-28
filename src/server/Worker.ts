@@ -100,7 +100,7 @@ export async function startWorker() {
   // Configure MIME types for webp files
   express.static.mime.define({ "image/webp": ["webp"] });
 
-  app.use(express.static(path.join(__dirname, "../../out")));
+  app.use(express.static(path.join(__dirname, "../../static")));
   app.use(
     "/maps",
     express.static(path.join(__dirname, "../../static/maps"), {
