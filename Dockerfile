@@ -7,7 +7,6 @@ RUN npm ci
 
 COPY . .
 
-# ★ OpenFrontIO は static/ に直接ビルドするので cp は不要
 RUN npm run build-prod
 
 EXPOSE 3000
